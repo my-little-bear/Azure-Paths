@@ -1,0 +1,37 @@
+Topics to study:
+
+- App Service Plans
+-- App Service Domains
+-- DNS zones
+-- SSL Cert integration
+
+- Azure Container Registry
+- Azure container instances
+
+Non-isolated and Isolated service plan types
+
+Non-Isolated App Serive Plans:
+- free and shared --> good for testing and very inexpensive and runs on shared infrastructure.
+- Basic (B1, B2, B3) --> good tooling for apps that require a little 
+- Standard (S1, S2, S3) --> app service plan for PROD with a dedicated app-service
+- Premium v2  and v3 --> upgraded for large prod.
+
+Isolated App Service Environment (ASE):
+- fully isolated and dedicated env for running webapps
+- high scale, high memory use.
+- isolation and secure network access.
+- fine-grained control over network traffic.
+- apps can connect over VPN to on-premises resources.
+
+Securing a Domain with SSL/TLS binding:
+- App service plan neets to be on Basic, Standard or Premium sku
+- Public vs Private certificate must be set taking into consideration the availability of the plan.
+- Managed vs un-managed certs.
+- You can enforce TLS versions and HTTPs
+
+Auto scaling is only available in non-dev pricing tiers: basic, standard, premium.
+App service instances have implicit load-balancers in their service plan to distribute traffic alongside
+the service plan machine instances.
+
+When attaching a valid domain name to the app service, you need to create an "App Service Domain"
+which will create a DNS zone to configure any DNS entries.
