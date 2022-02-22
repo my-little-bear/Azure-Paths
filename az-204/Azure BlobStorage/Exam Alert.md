@@ -1,3 +1,11 @@
+# TO REVIEW
+
+- Database consistency levels
+- Storage Account Rehydration
+- GREMLIN and multinode connectivity
+
+
+
 # Develop for AzureStorage
 
 It is **15-20%** of the following:
@@ -47,7 +55,16 @@ Serverside operations are Javascript based: StoredProcedures, Triggers, UDFs and
 
 Data Access Tiers: Hot, Cool, Archive
 
-Data Rehydration:
+## Data Rehydration:
 
 - Standard Priority --> 5min to 15 hours depending on the size of the data that needs to be restored.
 - High Priority --> takes less time.
+
+## Data Redundancy
+
+- LRS --> 3 local copies of the same data.
+- ZRS --> 3 copies accros 3 availabiity zones in the primary region. This is on the same region accross multiple data centers
+- GRS --> copy the data syncronously 3 times on the primary region and asynchronoously on the secondary region on a single location.
+- GZRS --> copies the data across several redundant regions and then
+- RA-GRS
+- RA-GZRS
