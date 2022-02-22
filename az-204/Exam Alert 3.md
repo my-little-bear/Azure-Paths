@@ -156,7 +156,7 @@ Solution: certificate in http header x-arr-clientcert and needs to be decoded.
 
 **Scenario 4:**
 
-William is creating an app using AAD for authentication. He wants to allow users from his company's directory to login. He wants to retrieve group membership for groups assigned to this app. How should William configure his app manifest for these requirements?
+William is creating an app using AAD for authentication. He wants to allow users from his company's directory to login. He wants to retrieve group membership for groups assigned tthis app. How should William configure his app manifest for these requirements?
 
 Solution: Update groupMembershipClaims in the app manifest to have "Application Group"
 
